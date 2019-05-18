@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+form {
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 2rem;
+}
+
+h1 {
+  color: #ec407a;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+label {
+  background-color: #ec407a;
+  color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  display: inline-block;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+label i {
+  font-size: 26px;
+}
+
+.input-container {
+  display: flex;
+}
+
+#file {
+  display: none;
+}
+
+#file-path {
+  margin: 1rem;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.submit {
+  background-color: #ec407a;
+  color: white;
+  border: 0;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  outline: none;
+  cursor: pointer;
+}

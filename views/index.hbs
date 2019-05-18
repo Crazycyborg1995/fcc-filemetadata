@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <title>File Metadata</title>
+</head>
+
+
+<body>
+  <h1>File Meta Data </h1>
+  <form enctype="multipart/form-data" method="POST" action="/upload">
+    <div class="input-container">
+      <label for="file">
+        <i class="fas fa-paperclip" aria-hidden="true"></i>
+      </label>
+      <input type="file" id="file" onChange="getFilename()" name="uploadFile">
+      <p id="file-path">No File Chosen</p>
+    </div>
+    <input type="submit" class="submit">
+  </form>
+</body>
+<script>
+  function getFilename() {
+    document.getElementById('file-path').innerHTML = document.getElementById('file').value.split('\\')[2];
+  }
+</script>
+
+</html>
